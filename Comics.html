@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>  
+    <title>Comics</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .cb1{
+            width:200px;
+            float:left;
+            margin-left:20px;
+            text-align:center;
+            text-align:right;
+            border-spacing:2px;
+            } 
+        
+        .mv1{
+            width:200px;
+            float:left;
+            margin-left:20px;
+            text-align:center;
+            text-align:right;
+            border-spacing:2px; 
+            
+        }
+    </style>
+
+    <header>
+    
+    </header>
+    
+</head>
+<body>
+      <nav class="nav">
+        <div id="tri">
+            <ul class="nav_list">
+                <li>
+                    <a href="index.html" class="btn">Home</a>
+                </li>
+                <!--<li>
+					<a href="about.html" class="btn">About Me</a>
+				</li>-->
+                <li>
+                    <a href="Comics.html" class="btn">Comics</a>
+                </li>
+                
+                <li>
+                    <a href="Contact.html" class="btn">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <button class="accordion">Comic Books</button>
+<div class="panel">
+    <div class="cb1">
+        <p> Ultimate Spiderman</p>
+    <img src="assets/img/miles.jpg" hspace="20">
+        <p>$16.90</p>
+        <p>Description:<br>
+            Lorem ipsum...</p>
+</div>
+        <div class="cb1">
+            <p>The Wedding of Deadpool</p>
+    <img src="assets/img/deadpool.jpg" width="200" height="310" hspace="30">
+         <p>$12.99</p>
+            <p>Description:<br>
+                Lorem ipsum...</p>
+    </div>
+    <div class="cb1">
+        <p>Batman:Death of the Family</p>
+    <img src="assets/img/ditf.jpeg" width="200" height="310" hspace="35">
+    <p>$13.98</p>
+        <p>Description:<br>
+            Lorem ipsum...</p>
+    </div>
+    <div class="cb1">
+    <p>Justice League vs Suicide Squad</p>
+        <img src="assets/img/jl%20vs%20SS.jpg" width="200" height="290" hspace="40">    
+        <p>$14.75</p>
+        <p>Description:<br>
+            Lorem ipsum...</p>
+    </div>
+    <div class="cb1">
+            <p>Web of spiderman</p>
+            <img src="assets/img/webs.jpg" width="200" height="310"hspace="30">
+        <p>$25.99</p>
+        <p>Description:<br>
+            Lorem ipsum...</p>
+        </div>
+    <div class="cb1">
+        <p>The Hunt For Wolverine</p>
+        <img src="assets/img/wolverine.jpg" width="200" height="309" hspace="30">
+        <p>$19.98</p>
+        <p>Description:<br>
+            Lorem ipsum...</p>
+        </div>
+    <div class="cb1">
+    <p>FlashPoint </p>
+        <img src="assets/img/flashpoint.png" width="200" height="300" hspace="35">
+      <p>$30.68</p>
+        <p>Description:<br>Lorem ipsum...</p>
+    </div>
+    </div>
+<br>
+    
+<button class="accordion">Movies</button>
+<div class="panel">
+  <div class="mv1">
+      <p>Batman Ninja</p>
+    <img src="assets/img/bninja.jpeg">
+      <p>Description:<br>Lorem ipsum...
+      </p>
+    </div>
+    <div class="mv1">
+        <p>Black Panther</p>
+        <img src="assets/img/blackp.jpg" width="200" height="250" hspace="30">
+        <p>Description:<br>Lorem ipsum...
+        </div>
+    <div class="mv1">
+        <p>Captain Marvel</p>
+    <img src="assets/img/captainm.jpg"  width="300" height="250" hspace="35">
+        <p>Description:<br>Lorem ipsum...
+    </div>
+
+    <div class="mv1">
+    <img src="assets/img/">
+        <p>Description:<br>Lorem ipsum...
+    </div>
+</div>
+    <style>
+ body {
+   background-image: url("assets/img/comics.jpg");
+}
+    </style>
+    
+    <footer class="nav">
+    <nav class="nav">
+        <div id="tri">
+            <ul class="nav_list">
+                <li>
+                    <a href="index.html" class="btn">Home</a>
+                </li>
+                <!--<li>
+					<a href="about.html" class="btn">About Me</a>
+				</li>-->
+                <li>
+                    <a href="Comics.html" class="btn">Comics</a>
+                </li>
+                
+                <li>
+                    <a href="Contact.html" class="btn"> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </footer>
+    <script>
+    
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    </body>
+</html>
